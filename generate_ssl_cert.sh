@@ -1,6 +1,6 @@
 rm *.pem
 # 1. Generate CA's private key and self-signed certificate
-openssl req -x509 -newkey rsa:4096 -day 365 -keyout ca-key.pem -out ca-cert.pem -subj "/C=NG/ST=Rivers/L=Choba/O=Mono Institution/OU=Finance/CN=*.monoinstitute.net/emailAddress=monoinstitute@gmail.com"
+openssl req -x509 -newkey rsa:4096 -days 365 -nodes -keyout ca-key.pem -out ca-cert.pem -subj "/C=NG/ST=Rivers/L=Choba/O=Mono Institution/OU=Finance/CN=*.monoinstitute.net/emailAddress=monoinstitute@gmail.com"
 
 echo "CA's self-signed certificate"
 openssl x509 -in ca-cert.pem -noout -text
