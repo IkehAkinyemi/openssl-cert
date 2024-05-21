@@ -1,4 +1,4 @@
-# SSL Certificate Generation Script
+# SSL Certificate Generation Script 📝
 This script is a bash shell script that generates SSL certificates for use with web servers. The script generates a self-signed certificate for a certificate authority (CA) and a signed certificate for a web server.
 
 ## Requirements
